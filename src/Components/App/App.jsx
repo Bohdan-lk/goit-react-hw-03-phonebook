@@ -66,7 +66,7 @@ export default class App extends Component {
 
 		  <h2 className={styles.title}>Contacts</h2>
 
-		  {contacts.length > 0 && (
+		  {!!contacts.length && (
 			  <Filter value={filter} onChangeFilter={this.changeFilter} />
 		  )}
 		  <ContactList
